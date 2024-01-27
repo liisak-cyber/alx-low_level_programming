@@ -15,11 +15,6 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    /* Implementation of the function goes here. */
-}
-
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
-{
 	dlistint_t *tmp = *head;
 
 	/* If the list is empty, return -1 indicating failure. */
