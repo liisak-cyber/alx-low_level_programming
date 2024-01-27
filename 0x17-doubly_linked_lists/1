@@ -5,7 +5,7 @@
  * @head: The head of the dlistint_t list.
  *
  * Description:
- * This function frees each node of doubly linked list starting from the head.
+ * This function frees each node of a doubly linked list starting from the head.
  */
 void free_dlistint(dlistint_t *head)
 {
