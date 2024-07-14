@@ -4,14 +4,16 @@
 /**
  * binary_search - Perform a binary search on a sorted integer array.
  * @array: Pointer to the first element of the array.
- * @low: Starting index for the search.
- * @high: Ending index for the search.
+ * @size: Number of elements in the array.
  * @value: Value to search for in the array.
  *
  * Return: Index where the value is found, or -1 if not found.
  */
-static int binary_search(int *array, size_t low, size_t high, int value)
+int binary_search(int *array, size_t size, int value)
 {
+    size_t low = 0;
+    size_t high = size - 1;
+
     while (low <= high)
     {
         size_t mid = (low + high) / 2;
